@@ -1,0 +1,77 @@
+<GridLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="3"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center|start"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="start"
+        android:text="Juninho"
+        android:maxLength="13"
+        android:textColor="#100C0C"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtCelular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:gravity="end"
+        android:text="2313"
+        android:textColor="#666666"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <LinearLayout
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_row="0"
+        android:layout_columnWeight="1"
+        android:layout_column="2"
+        android:maxWidth="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btAtualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_atualizar" />
+
+        <ImageView
+            android:id="@+id/btDeletar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_deletar" />
+
+    </LinearLayout>
+
+</GridLayout>

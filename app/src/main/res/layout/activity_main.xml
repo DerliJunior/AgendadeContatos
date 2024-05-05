@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textNomeSobrenome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome"
+            android:textColor="#333333"
+            android:layout_row="0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textTelefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:layout_marginTop="4dp"
+            android:text="Telefone"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textSobrenome" />
+
+    </GridLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewContatos"
+        android:layout_width="match_parent"
+        android:layout_height="531dp" />
+
+    <Button
+        android:id="@id/btCadastrar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/circular_button"
+        android:gravity="center"
+        android:importantForAccessibility="no"
+        android:text="@string/sinal_mais"
+        android:textSize="32sp" />
+
+
+</LinearLayout>
